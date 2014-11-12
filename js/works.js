@@ -9,22 +9,26 @@ SMWorks = new function(){
 	    	  //masonryHorizonatl : { rowHeight: 300 },
 	    		  
 	    	  getSortData : {
-	    		    designer : function ( $elem ) {
+	    		    designer : function ( elem ) {
+	    		    	$elem = $(elem);
 	    		        var value = 0;
 	    		    	if( $elem.hasClass('developer') || $elem.hasClass('teacher') ) value = 1;
 	    		    	return value;
 	    		    },
-	    		    developer : function ( $elem ) {
+	    		    developer : function ( elem ) {
+	    		    	$elem = $(elem);
 	    		    	var value = 0;
 	    		    	if( $elem.hasClass('designer') || $elem.hasClass('teacher') ) value = 1;
 	    		    	return value;
 	    		    },
-	    		    teacher : function ( $elem ) {
+	    		    teacher : function ( elem ) {
+	    		    	$elem = $(elem);
 	    		    	var value = 0;
 	    		    	if( $elem.hasClass('designer') || $elem.hasClass('developer') ) value = 1;
 	    		    	return value;
 	    		    },
-	    		    title: function ( $elem ){
+	    		    title: function ( elem ){
+	    		    	$elem = $(elem);
 	    		    	return $elem.find('h2').text();
 	    		    }
 	    		  }

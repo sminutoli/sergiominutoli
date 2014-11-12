@@ -15,14 +15,6 @@
 	<link rel="stylesheet" type="text/css" href="css/basic.css"/>
 	<link rel="stylesheet" type="text/css" href="css/site.css"/>
 	<link rel="stylesheet" type="text/css" href="css/isotope.css"/>
-	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="js/jquery.cspinner.min.js"></script>
-	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
-
-	<script type="text/javascript" src="js/navbar.js"></script>
-	<script type="text/javascript" src="js/works.js"></script>
-	<script type="text/javascript" src="js/analytics.js"></script>
-
 </head>
 
 <body>
@@ -78,42 +70,14 @@
 	
 	<footer></footer>
 
-	<script type="text/javascript">
-		$( function(){
-			$('body').css('min-height', $(window).height() );
-			if( window.location.hash ){
-				//window.location.href = window.location.hash.split('#')[1];
-				var section = window.location.hash.split('#')[1];
-				var theLink = $('a[href*='+section);
-				if( !theLink ) return;
-
-				function changeSection(){
-					theLink.trigger('click');
-				}
-				theLink.trigger('mouseover');
-				setTimeout(changeSection, 1000);
-			}
-		})
-
-		<?php
-			if( isset($_GET['section']) ){
-				$section = $_GET['section'];
-				$script = "
-					$(function(){
-						var theLink = $('a[href*=$section');
-						if( !theLink ) return;
-
-						function changeSection(){
-							theLink.trigger('click');
-						}
-						theLink.trigger('mouseover');
-						setTimeout(changeSection, 1000);
-					});				
-				";
-				//echo $script;
-			}
-		?>
-	</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cspinner.min.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/navbar.js"></script>
+	<script type="text/javascript" src="js/works.js"></script>
+	<script type="text/javascript" src="js/analytics.js"></script>
+	<script type="text/javascript" src="js/jquery.routes.js"></script>
+	<script type="text/javascript" src="js/routes.js"></script>
 
 </body>
 </html>
