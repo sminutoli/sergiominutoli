@@ -1,0 +1,4 @@
+#ErrorDocument 404 /404.html
+#RewriteEngine On
+#RewriteRule ^([a-zA-Z0-9]+)$ index.php?section=$1
+#RewriteRule ^([a-zA-Z0-9]+)/$ index.php?section=$1
