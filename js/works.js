@@ -52,7 +52,7 @@ SMWorks = new function(){
 		$(window).load( function(){ 
 			$("#work article .loading").remove();
 			$("#work article img").animate( { 'opacity': 1 }, 1000 );
-			$('#work').isotope('reLayout'); 
+			works.isotope('layout'); 
 		} );
 		$(window).bind('sectionChanged', SMWorks.refreshWorks );
 		$("#work article").mouseover( SMWorks.updateMarker );
@@ -128,7 +128,7 @@ SMWorks = new function(){
 					$(article).append(data);
 					$('.workDetail', article).hide().fadeIn(1000);
 					$('.workDetail .close', article).click( SMWorks.unloadWork );
-					$('#work').isotope('reLayout');
+					works.isotope('layout');
 
 					var slides = $('.slide', article);
 					var nSlide = 0;
@@ -156,7 +156,16 @@ SMWorks = new function(){
 		clearInterval( article.attr('data-interval') )
 		$('.workDetail', article).fadeOut(1000, function(){
 			$(this).remove();
-			article.removeClass('detail').animate({ width: '230px', height: '60px' }, 500, function(){ $('#work').isotope('reLayout') } )
+			article
+				.removeClass('detail')
+				.animate({ 
+					width: '230px', 
+					height: '60px' 
+				}, 
+				500, 
+				function(){ 
+					works.isotope('layout') 
+				})
 		});
 	}
 	
