@@ -72,6 +72,7 @@
 	<footer></footer>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/sminutoli-vendor.js"></script>
 	<script type="text/javascript" src="js/sminutoli-production.min.js"></script>
 
 </body>

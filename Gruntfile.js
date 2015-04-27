@@ -7,11 +7,16 @@ module.exports = function(grunt) {
         concat: {   
             dist: {
                 src: [
-                    'js/vendor/*.js',
                     'js/*.js',
-                    '!js/sminutoli-production.js'
+                    '!js/sminutoli*.js'
                 ],
                 dest: 'js/sminutoli-production.js',
+            },
+            vendor: {
+                src: [
+                    'js/vendor/*.js'
+                ],
+                dest: 'js/sminutoli-vendor.js',  
             }
         },
 
@@ -36,7 +41,7 @@ module.exports = function(grunt) {
         watch: {
             scripts: {
                 files: ['js/*.js', '!js/sminutoli-production.js', '!js/sminutoli-production.min.js'],
-                tasks: ['concat', 'uglify'],
+                tasks: ['concat:dist', 'uglify'],
                 options: {
                     spawn: false
                 }
@@ -53,7 +58,8 @@ module.exports = function(grunt) {
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask('default', [
-        'concat',
+        'concat:dist',
+        'concat:vendor',
         'uglify',
         'imagemin',
         'watch:scripts'

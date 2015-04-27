@@ -1,8 +1,7 @@
 node_modules
 bower_components
 tmp
-js/sminutoli-production.js
-js/sminutoli-production.min.js
+js/sminutoli*.js
 .buildpath
 .idea
 .settings
