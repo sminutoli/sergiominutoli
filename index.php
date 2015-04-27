@@ -11,6 +11,7 @@
 	<meta charset="utf-8">
 	<meta name="description" content="Sergio Ariel Minutoli, diseñador gráfico independiente, desarrollador web e instructor">
 	<meta name="keywords" content="Sergio,Minutoli,diseño,design,web,desarrollador,developer,flash,actionscript,html,javascript,php">
+	<meta name="viewport" content="initial-scale=1">
 	<title>Sergio Minutoli: Diseñador Grafico, Desarrollador, Instructor</title>
 	<link rel="stylesheet" type="text/css" href="css/basic.css"/>
 	<link rel="stylesheet" type="text/css" href="css/site.css"/>
@@ -71,13 +72,7 @@
 	<footer></footer>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.cspinner.min.js"></script>
-	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-	<script type="text/javascript" src="js/navbar.js"></script>
-	<script type="text/javascript" src="js/works.js"></script>
-	<script type="text/javascript" src="js/analytics.js"></script>
-	<script type="text/javascript" src="js/jquery.routes.js"></script>
-	<script type="text/javascript" src="js/routes.js"></script>
+	<script type="text/javascript" src="js/sminutoli-production.min.js"></script>
 
 </body>
 </html>
