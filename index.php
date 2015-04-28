@@ -44,7 +44,7 @@
 			<article class='done web developer designer img'><span class='icon' title="trabajo realizado"></span><img alt="" src="img/works/fleet_snap_big.png" width="280px" /> </article>
 			<article class='done web art personal developer designer bullet'><span class='icon' title="trabajo realizado"></span><h2><a href="http://www.ociodromo.com.ar" target="_blank">OCIODROMO</a></h2>Participación en el proyecto colectivo Bisiesto</article>
 			<article class='done web flash actionscript php mysql bac developer designer bullet'><span class='icon' title="trabajo realizado"></span><h2><a href="http://www.mibac.tv" target="_blank">TV BAC</a></h2>Sistema de votos y ranking</article>
-			<article class='done logo designer  bullet'><span class='icon' title="trabajo realizado"></span><h2><a href="http://fleet-studio.com bullet" target="_blank" >Fleet Studio</a></h2>Diseño de marca para Fleet Studio</article>
+			<article class='done logo designer  bullet'><span class='icon' title="trabajo realizado"></span><h2><a href="http://fleet-studio.com" target="_blank" >Fleet Studio</a></h2>Diseño de marca para Fleet Studio</article>
 			<article class='done logo designer  img'><img src='img/works/fleet_logo_1.png' /></article>
 			<article class='progress web php mysql lezgon developer bullet'><span class='icon' title="proyecto activo"></span><h2>Lezgon</h2>Nuevos desarrollos y mantenimiento en CMS existente</article>
 			<article class='progress teacher developer bullet'><span class='icon' title="proyecto activo"></span><h2><a href="http://www.educacionit.com.ar/cursos-de-programacion-web" target="_blank">Cursos de Programación Web</a></h2>Instructor en educacionIT</article>
